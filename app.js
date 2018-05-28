@@ -13,7 +13,7 @@ app.use(require("express-session")({
     saveUninitialized: false
     
 }));
-app.use(forceSsl);
+//app.use(forceSsl);
 
 
 
