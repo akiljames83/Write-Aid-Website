@@ -1,4 +1,5 @@
 var express     = require("express"),
+    forceSsl    = require('force-ssl-heroku'),
     app         = express();
     
     
@@ -12,7 +13,7 @@ app.use(require("express-session")({
     saveUninitialized: false
     
 }));
-
+app.use(forceSsl);
 
 
 
