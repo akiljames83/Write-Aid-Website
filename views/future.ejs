@@ -30,6 +30,18 @@
       .copyright {
         transform:translateX(-35px);
       }
+      @media all and (max-width: 600px) {
+          .tabs {
+            padding-bottom:10%;
+            padding-left:15%;
+          }
+      }
+      @media all and (min-width: 600px) {
+          .tabs {
+            
+          }
+      }
+
     </style>
 
   </head>
@@ -112,17 +124,21 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-10 col-md-10 mx-auto">
+        <div class="col-lg-10 col-md-10 mx-auto" style="transform:translateX(30px)">
+          <center>
+          <div class="row">
+            <ul class="nav" style="padding-bottom: 25px">
           
-        
-        <ul class="nav" style="padding-bottom: 25px">
-          
-          <li class="active tabs"><a class=" btun" data-toggle="tab" href="#home">Home</a></li>
-          <li class="tabs "><a class="btun" data-toggle="tab" href="#menu1" onclick="section1()">Graph 1</a></li>
-          <li class="tabs"><a  class="btun" data-toggle="tab" href="#menu2" onclick="section2()">Graph 2</a></li>
-          <li class="tabs"><a class="btun" data-toggle="tab" href="#menu3" onclick="section3()">Graph 3</a></li>
+              <li class="active tabs col-xs-6"><a class=" btun" data-toggle="tab" href="#home">Home</a></li>
+              <li class="tabs col-xs-6"><a class="btun" data-toggle="tab" href="#menu1" onclick="section1()">Graph1</a></li>
+              <li class="tabs col-xs-6"><a  class="btun" data-toggle="tab" href="#menu2" onclick="section2()">Graph2</a></li>
+              <li class="tabs col-xs-6"><a class="btun" data-toggle="tab" href="#menu3" onclick="section3()">Graph3</a></li>
 
-        </ul>
+            </ul>
+          </div>
+          </center>
+        
+        
         </div>
       </div>
       <div class="row">
